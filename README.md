@@ -13,6 +13,57 @@
   <body>
   </body>
 </html>
+
+
+```
+* **Head**
+contains the metadata for a web page. 
+Metadata is information about the page that isn’t displayed directly on the web page. 
+Unlike the information inside of the <body> tag, the metadata in the head is information about the page itself. 
+
+
+
+* **Displaying Text**
+
+to display text in html 
+
+* **Paragraph**
+contain a block of plain text 
+```
+<p> </p>
+```
+
+* **Span**
+contains short pieces of text , use to separate small pieces of content that are on the same line 
+as other content
+```
+<div>
+ <p>
+  <span>The brown bear (Ursus arctos) is native to parts of northern Eurasia and North America. Its conservation status is currently Least Concern. There are many subspecies within the brown bear species, including the Atlas bear and the Himalayan brown bear.</span>
+ </p>
+</div>
+```
+
+* **styling text**
+built-in style
+
+ * italic
+ ```
+ <em></em>
+ ```
+ * bold
+ ```
+ <strong></strong>
+ ```
+
+* **image**
+```
+<img src="" alt="" />
+```
+
+* **videos**
+```
+<video src="" width="" height="" controls> </video>
 ```
 
 **Heading**
@@ -24,6 +75,19 @@
 ```
 <p>A paragraph of text. Some information we would like to communicate to the viewer. This can be as long or short as we would like.</p>
 ```
+
+**HTML Attributes**
+Attributes are content added to the opening tag of an element and can be used in several different ways, from providing information to changing styling. Attributes are made up of the following two parts
+
+* name of the attribute
+  > use id attribute to specify different content e.g. DIV
+  ```
+  <div id="intro>
+   <h1>Introduction</h1>
+  </div>
+  ```
+
+* value of the attribute
 
 **Main**
 
@@ -231,8 +295,8 @@ If you omit the value attribute, the submitted form data uses the default value,
 ```
 
 **Div**
-* div element, also known as a division element, is a general purpose container for other elements.
-
+* div short for division 
+* division or container that divides the page into sections 
 ```
 <div>
 </div>
