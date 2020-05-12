@@ -21,6 +21,11 @@ contains the metadata for a web page.
 Metadata is information about the page that isn’t displayed directly on the web page. 
 Unlike the information inside of the <body> tag, the metadata in the head is information about the page itself. 
 
+* **Title**
+A browser’s tab displays the title specified in the <title> tag
+```
+ <title> </title>
+```
 
 
 * **Displaying Text**
@@ -118,6 +123,11 @@ Attributes are content added to the opening tag of an element and can be used in
 
 ```
 <a href="https://freecodecamp.org">this links to freecodecamp.org</a>
+
+# target="_blank"
+for a link to open in a new window
+
+<a href="" target="_blank"></a>
 
 ```
 * a (anchor) elements can also be used to create internal links to jump to different sections within a webpage.
@@ -300,4 +310,12 @@ If you omit the value attribute, the submitted form data uses the default value,
 ```
 <div>
 </div>
+```
+
+* **Folder Organize**
+```
+project-folder/
+|—— about.html
+|—— contact.html
+|—— index.html
 ```
