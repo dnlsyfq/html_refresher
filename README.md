@@ -319,3 +319,140 @@ project-folder/
 |—— contact.html
 |—— index.html
 ```
+---
+
+# HTML Tables
+
+## Create Table 
+
+* to add rows using the table row element: <tr>
+```
+<table>
+  <tr>
+  </tr>
+  <tr>
+  </tr>
+</table>
+```
+
+* to add data to a table
+```
+<table>
+  <tr>
+    <td>73</td>
+    <td>81</td>
+  </tr>
+</table>
+```
+
+* To add titles to rows and columns, you can use the table heading element: <th>
+
+Note, also, the use of the scope attribute, which can take one of two values:
+
+row - this value makes it clear that the heading is for a row.
+col - this value makes it clear that the heading is for a column.
+ 
+ 
+ ```
+ <table>
+  <tr>
+    <th></th>
+    <th scope="col">Saturday</th>
+    <th scope="col">Sunday</th>
+  </tr>
+  <tr>
+    <th scope="row">Temperature</th>
+    <td>73</td>
+    <td>81</td>
+  </tr>
+</table>
+ ```
+ * Table Head
+ ```
+ <thead>
+    <tr>
+      <th></th>
+      <th scope="col">Saturday</th>
+      <th scope="col">Sunday</th>
+    </tr>
+  </thead>
+ ```
+ 
+ * add border
+ ```
+table, th, td {
+  border: 1px solid black;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+ ```
+ * Spanning Columns
+ ```
+ <table>
+  <tr>
+    <th>Monday</th>
+    <th>Tuesday</th>
+    <th>Wednesday</th>
+  </tr>
+  <tr>
+    <td colspan="2">Out of Town</td>
+    <td>Back in Town</td>
+  </tr>
+</table>
+ ```
+* Spanning Rows
+```
+<table>
+  <tr> <!-- Row 1 -->
+    <th></th>
+    <th>Saturday</th>
+    <th>Sunday</th>
+  </tr>
+  <tr> <!-- Row 2 -->
+    <th>Morning</th>
+    <td rowspan="2">Work</td>
+    <td rowspan="3">Relax</td>
+  </tr>
+  <tr> <!-- Row 3 -->
+    <th>Afternoon</th>
+  </tr>
+  <tr> <!-- Row 4 -->
+    <th>Evening</th>
+    <td>Dinner</td>
+  </tr>
+</table>
+```
+
+* table body
+Long tables can be sectioned off using the table body element: <tbody>.
+The <tbody> element should contain all of the table’s data
+used to separate the body of the table from its headers and footers
+ ```
+     <tbody>
+    <tr>
+      <th>Company Name</th>
+      <th>Number of Items to Ship</th>
+      <th>Next Action</th>
+    </tr>
+    </tbody>
+ ```
+ 
+* table footer
+Footers are often used to contain sums, differences, and other data results.
+bottom part of a long table can also be sectioned off using the <tfoot> element.
+ ```
+   <tfoot>
+    <tr>
+      <th>Total</th>
+      <td>$22M</td>
+      <td>$12.5M</td>
+    </tr>
+  </tfoot>
+ ```
+ 
+ 
+ 
+ 
+ 
+ 
+ 
