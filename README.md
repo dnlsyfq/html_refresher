@@ -449,10 +449,30 @@ bottom part of a long table can also be sectioned off using the <tfoot> element.
     </tr>
   </tfoot>
  ```
+ ---
+ # DOM
+ 
+ ```
+ document.object.innerHTML = 'text'
+ ```
  
  
+ All HTML elements are objects.
+ The document object has methods that allow you to select the desired HTML element.
  
- 
+ ```
+ //finds element by id
+document.getElementById(id) 
+
+//finds elements by class name
+document.getElementsByClassName(name) 
+
+//finds elements by tag name
+document.getElementsByTagName(name)
+
+var elem = document.getElementById("demo");
+elem.innerHTML = "Hello World!";
+ ```
  
  
  
