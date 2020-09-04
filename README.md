@@ -522,3 +522,117 @@ element.parentNode returns the parent node of an element.
   </body>
 </html>
 ```
+## Changing Attributes
+
+```
+<img id="image" src="a.png" alt=""/>
+<script>
+  var el = document.getElementById("image");
+  el.src = "apple.png"
+</script>
+```
+
+```
+<a href="http:// "></a>
+<script>
+  var el = document.getElementsByTagName("a");
+  el[0].href = "http://";
+</script>
+```
+
+## Changing Style
+
+```
+<div id="demo" style="width:200px">some text</div>
+<script>
+  var x = document.getElementById('demo');
+  x.style.color = '6600FF';
+  x.style.width = '100px';
+</script>
+```
+
+## Creating elements 
+
+* element.cloneNode() clones an element and returns the resulting node.
+* document.createElement(element) creates a new element node.
+* document.createTextNode(text) creates a new text node.
+
+```
+var node = document.createTextNode("Some new text");
+```
+
+This will create a new text node, but it will not appear in the document until you append it to an existing element with one of the following methods:
+```
+element.appendChild(newNode) adds a new child node to an element as the last child node.
+element.insertBefore(node1, node2) inserts node1 as a child before node2.
+```
+```
+<div id ="demo">some content</div>
+
+<script>
+  //creating a new paragraph
+  var p = document.createElement("p");
+  var node = document.createTextNode("Some new text");
+  //adding the text to the paragraph
+  p.appendChild(node);
+
+  var div = document.getElementById("demo");
+  //adding the paragraph to the div
+  div.appendChild(p);
+</script>
+```
+
+```
+
+var el = document.createElement("li");
+var txt = document.createTextNode("B");
+el.appendChild(txt);
+var ul = document.getElementById("list");
+ul.appendChild(el);
+```
+
+## Removing Elements
+
+To remove an HTML element, you must select the parent of the element and use the removeChild(node) method.
+
+```
+<div id="demo">
+  <p id="p1">This is a paragraph.</p>
+  <p id="p2">This is another paragraph.</p>
+</div>
+
+<script>
+var parent = document.getElementById("demo");
+var child = document.getElementById("p1");
+parent.removeChild(child);
+</script>
+```
+
+alternative way
+```
+var child = document.getElementById("p1");
+child.parentNode.removeChild(child);
+```
+
+## Replacing Elements
+
+To replace an HTML element, the element.replaceChild(newNode, oldNode) method is used
+
+```
+<div id="demo">
+  <p id="p1">This is a paragraph.</p>
+  <p id="p2">This is another paragraph.</p>
+</div>
+
+<script>
+var p = document.createElement("p");
+var node = document.createTextNode("This is new");
+p.appendChild(node);
+
+var parent = document.getElementById("demo");
+var child = document.getElementById("p1");
+parent.replaceChild(p, child);
+</script>
+```
+
+
