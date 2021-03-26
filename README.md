@@ -15,6 +15,22 @@
 </html>
 
 
+# HTML Structure
+
+```
+<html>
+ <head>
+ </head>
+ <header>
+ </header>
+ <body>
+ </body>
+ <footer>
+ </footer>
+</html>
+```
+
+
 ```
 * **Head**
 contains the metadata for a web page. 
