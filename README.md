@@ -652,3 +652,9 @@ parent.replaceChild(p, child);
 ```
 
 
+# navigating in same page 
+
+```
+<a href="#s1">Go to S1</a>
+<h2 id="s1">Section 1</h2>
+```
